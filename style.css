@@ -1,0 +1,129 @@
+body {
+    background-color : #122142;
+    background-image: url('cal.png');
+    background-size: 90px 135px;
+}
+
+h1 {
+    line-height: 0.6;
+}
+
+.latar-persegi{
+    background: linear-gradient(to right, #ffffff, transparent);
+    max-width: 100%;
+    padding : 5px;
+}
+
+.judul {
+    font-size: 2.0rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.spek {
+    font-size: 1.0rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.logo-title {
+    height: 3.0rem;
+    width: 2.2rem;
+}
+
+.calculator {
+    background-color: #ccb97c;
+    padding: 5px;
+    text-align: center;
+    max-width: 40%;
+    margin: 50px auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(238, 235, 235, 0.212);   
+}
+
+#display {
+    background-color: #19112c;
+    color: #ffffff;
+    max-width: 250px;
+    font-size: 2.0rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 6px rgba(228, 223, 223, 0.445);
+}
+
+.buttons {
+    background-color: #6d6342;
+    border: 2px solid #1b1a1a;
+    padding: 10px;
+    text-align: center;
+    max-width: 70%;
+    max-height: 70%;
+    margin: 50px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(19, 18, 18, 0.616);
+}
+
+button {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 1.25rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 2px;
+    box-shadow: 0 10px 20px rgba(5, 5, 5, 0.541);
+}
+
+/*perubahan warna tombol, saat kursor berada diatas tombol*/
+button:hover {
+    background-color: #ffffff;
+    color:#333131;
+}
+
+/*mengatur animasi tombol, saat memencet tombol tombol*/
+button:active {
+    transform: scale(0.85);
+}
+
+.btn-number:hover {
+    background-color: #000000;
+    color: #ffffff
+}
+
+.clear {
+    background-color: #e3f306;
+}
+
+.delete {
+    width : 5.0rem;
+    background-color: #cc0e0e;
+    color: #ffffff;
+}
+
+.btn-operator {
+    background-color: #616469;
+}
+
+.dot {
+    background-color: #252424;
+    color: #ffffff;
+}
+
+.btn-equal {
+    width: 5.0rem;
+    background-color: #1142aa;
+    color:#ffffff;
+}
+
+.copyright {
+    text-align: right;
+    padding: 5px;
+    font-size: 0.7rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}

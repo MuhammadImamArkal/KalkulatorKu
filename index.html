@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator-Ku</title>
+    <link rel="icon" href="cal.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="latar-persegi">
+    <h1>
+        <span class="judul">KalkulatorKu <img src="cal.png" class="logo-title"></span>
+        <br><span class="spek">Unlimited Digit Fergusso!</span>
+    </h1>
+    </div>
+
+    <div class="calculator">
+
+        <!--Layar Perhitungan-->
+        <input type="text" id="display" readonly placeholder="0">
+
+        <!--Kumpulan Tombol-->
+        <div class="buttons">
+
+            <!--baris ke-1-->
+            <div class="baris-1">
+            <br>
+            <button class="clear" onclick="clearDisplay()">C</button>
+            <button class="delete" onclick="deleteLast()">DEL</button>
+            <button class="btn-operator" onclick="appendToDisplay('/')">/</button>
+            </div>
+            
+            <!--baris ke-2-->
+            <div class="baris-2">
+            <br>
+            <button class="btn-number" onclick="appendToDisplay('7')">7</button>
+            <button class="btn-number" onclick="appendToDisplay('8')">8</button>
+            <button class="btn-number" onclick="appendToDisplay('9')">9</button>
+            <button class="btn-operator" onclick="appendToDisplay('*')">x</button>
+            </div>
+
+            <!--baris ke-3-->
+            <div class="baris-3">
+            <br>
+            <button class="btn-number" onclick="appendToDisplay('4')">4</button>
+            <button class="btn-number" onclick="appendToDisplay('5')">5</button>
+            <button class="btn-number" onclick="appendToDisplay('6')">6</button>
+            <button class="btn-operator" onclick="appendToDisplay('-')">-</button>
+            </div>
+
+            <!--baris ke-4-->
+            <div class="baris-4">
+            <br>
+            <button class="btn-number" onclick="appendToDisplay('1')">1</button>
+            <button class="btn-number" onclick="appendToDisplay('2')">2</button>
+            <button class="btn-number" onclick="appendToDisplay('3')">3</button>
+            <button class="btn-operator" onclick="appendToDisplay('+')">+</button>
+            </div>
+
+            <!--baris ke-5-->
+            <div class="baris-5">
+            <br>
+            <button class="dot" onclick="appendToDisplay('.')">.</button>
+            <button class="btn-number" onclick="appendToDisplay('0')">0</button>
+            <button class="btn-equal" onclick="calculate()">=</button>
+            </div>
+        </div>
+        <p class="copyright">webappdev-imamarkal@2026</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
